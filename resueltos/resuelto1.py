@@ -15,8 +15,8 @@ def esEscalar(m):
 # Función de impresión
 def impMatriz(m):
 	for i in range(len(m)):
-		for j in range(len(m)):
-			print(str(m[i][j]) + " ")
+		for j in range (len(m[i])):
+			print(str(m[i][j]), "\t")
 		print("\n")
 
 # Principal
@@ -34,4 +34,6 @@ if esEscalar(matriz1):
 	print("Es matriz escalar")
 else:
 	print("No es matriz escalar")
+
+print(matriz1[1])
 

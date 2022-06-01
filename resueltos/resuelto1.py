@@ -21,15 +21,15 @@ def impMatriz(m):
 # Principal
 
 # Crear matrices
-matriz1 = [[3,0,0,0],[0,3,0,0],[0,0,3,0],[0,0,0,3]]
-matriz2 = [[3,0,0,0],[0,-3,0,0],[0,0,3,0],[0,0,0,3]]
-matriz3 = [[3,0,1,0],[0,3,0,0],[0,0,3,0],[0,0,0,3]]
+matriz1 = [[3,0,0,0],[0,3,0,0],[0,0,3,0],[0,0,0,3]] # Escalar
+matriz2 = [[3,0,0,0],[0,-3,0,0],[0,0,3,0],[0,0,0,3]] # No escalar
+matriz3 = [[3,0,1,0],[0,3,0,0],[0,0,3,0],[0,0,0,3]] # No escalar
 
 # En consola
 print("La matriz\n")
-impMatriz(matriz1)
+impMatriz(matriz1) # Podemos cambiar por matriz2 o matriz3
 
-if esEscalar(matriz1):
+if esEscalar(matriz1): # Podemos cambiar por matriz2 o matriz3
 	print("Es matriz escalar")
 else:
 	print("No es matriz escalar")

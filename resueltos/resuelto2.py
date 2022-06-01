@@ -19,7 +19,14 @@ def impMatriz(m):
         print('  '.join(map(str, line)))
     print()
 
-matriz1 = [[3,0,0,0],[0,3,0,0],[0,0,3,0],[0,0,0,3]] # Escalar
-matriz2 = [[3,0,0,0],[0,-3,0,0],[0,0,3,0],[0,0,0,3]] # No escalar
-matriz3 = [[3,0,1,0],[0,3,0,0],[0,0,3,0],[0,0,0,3]] # No escalar
+matriz1 = [[1,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,1]] # Escalar
+matriz2 = [[1,0,0,0],[0,-3,0,0],[0,0,1,0],[0,0,0,1]] # No escalar
+matriz3 = [[1,0,3,0],[0,1,0,0],[0,0,1,0],[0,0,0,1]] # No escalar
 
+print("La matriz\n")
+impMatriz(matriz1) # Podemos cambiar por matriz2 o matriz3
+
+if esEscalar(matriz1): # Podemos cambiar por matriz2 o matriz3
+        print("Es matriz escalar")
+else:
+        print("No es matriz escalar")

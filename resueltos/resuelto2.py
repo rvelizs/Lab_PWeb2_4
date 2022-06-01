@@ -1,3 +1,4 @@
+# Función de verificación Escalar
 def esEscalar(m):
     d = m[0][0]
     for i in range(len(m)):
@@ -9,14 +10,19 @@ def esEscalar(m):
                 return False
     return True
 
+# Función de verificación Unitaria
 def esUnitaria(m):
     return m[0][0] == 1 and esEscalar(m)
 
+# Función de impresión
 def impMatriz(m):
     for line in m:
         print('  '.join(map(str, line)))
     print()
 
+# Principal
+
+# Crear matrices
 matriz1 = [[1,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,1]] # Unitaria
 matriz2 = [[1,0,0,0],[0,-3,0,0],[0,0,1,0],[0,0,0,1]] # No unitaria
 matriz3 = [[1,0,3,0],[0,1,0,0],[0,0,1,0],[0,0,0,1]] # No unitaria

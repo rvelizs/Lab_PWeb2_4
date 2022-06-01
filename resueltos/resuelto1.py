@@ -14,10 +14,8 @@ def esEscalar(m):
 
 # Función de impresión
 def impMatriz(m):
-	for i in range(len(m)):
-		for j in range (len(m[i])):
-			print(str(m[i][j]), "\t")
-		print("\n")
+	for line in m:
+		print('  '.join(map(str, line)))
 
 # Principal
 

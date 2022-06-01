@@ -11,12 +11,16 @@ def esEscalar(m):
 				return False
 	return True
 
-matriz = [[3,0,0,0],[0,3,0,0],[0,0,3,0],[0,0,0,3]]
+         
+matriz1 = [[3,0,0,0],[0,3,0,0],[0,0,3,0],[0,0,0,3]]
+matriz2 = [[3,0,0,0],[0,-3,0,0],[0,0,3,0],[0,0,0,3]]
 
+for i in range(len(m)):
+  for j in range(len(m)):
+ 	  print(m[i][j])
 
-
-
-if esEscalar(matriz):
+if esEscalar(matriz1):
 	print("Es matriz ...")
 else:
 	print("No es ...")
+

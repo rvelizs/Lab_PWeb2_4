@@ -11,13 +11,16 @@ def esEscalar(m):
 				return False
 	return True
 
+def impMatriz(m):
+	for i in range(len(m)):
+		for j in range(len(m)):
+			print(m[i][j] + "")
+		print("\n")
+
          
 matriz1 = [[3,0,0,0],[0,3,0,0],[0,0,3,0],[0,0,0,3]]
 matriz2 = [[3,0,0,0],[0,-3,0,0],[0,0,3,0],[0,0,0,3]]
 
-for i in range(len(m)):
-  for j in range(len(m)):
- 	  print(m[i][j])
 
 if esEscalar(matriz1):
 	print("Es matriz ...")

@@ -4,11 +4,9 @@ def esEscalar(m):
         for j in range(len(m)):
             if i != j:
                 if m[i][j] != 0:
-                    print(m[i][j])
                     return False
-                elif m[i][j] != d:
-                    print(m[i][j])
-                    return False
+            elif m[i][j] != d:
+                return False
     return True
 
 def esUnitaria(m):
@@ -23,10 +21,11 @@ matriz1 = [[1,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,1]] # Unitaria
 matriz2 = [[1,0,0,0],[0,-3,0,0],[0,0,1,0],[0,0,0,1]] # No unitaria
 matriz3 = [[1,0,3,0],[0,1,0,0],[0,0,1,0],[0,0,0,1]] # No unitaria
 
+# Imprime la matriz
 print("La matriz\n")
-impMatriz(matriz1) # Podemos cambiar por matriz2 o matriz3
+impMatriz(matriz1)
 
 if esUnitaria(matriz1): # Podemos cambiar por matriz2 o matriz3
-        print("Es matriz unitaria")
+    print("Es matriz unitaria")
 else:
-        print("No es matriz unitaria")
+    print("No es matriz unitaria")

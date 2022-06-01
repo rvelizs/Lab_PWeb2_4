@@ -14,6 +14,12 @@ def esEscalar(m):
 def esUnitaria(m):
     return m[0][0] == 1 and esEscalar(m)
 
+def impMatriz(m):
+    for line in m:
+        print('  '.join(map(str, line)))
+    print()
+
 matriz1 = [[3,0,0,0],[0,3,0,0],[0,0,3,0],[0,0,0,3]] # Escalar
 matriz2 = [[3,0,0,0],[0,-3,0,0],[0,0,3,0],[0,0,0,3]] # No escalar
 matriz3 = [[3,0,1,0],[0,3,0,0],[0,0,3,0],[0,0,0,3]] # No escalar
+

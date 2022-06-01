@@ -16,6 +16,7 @@ def esEscalar(m):
 def impMatriz(m):
 	for line in m:
 		print('  '.join(map(str, line)))
+	print()
 
 # Principal
 
@@ -32,6 +33,4 @@ if esEscalar(matriz1):
 	print("Es matriz escalar")
 else:
 	print("No es matriz escalar")
-
-print(matriz1[1])
 

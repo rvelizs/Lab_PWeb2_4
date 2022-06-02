@@ -1,4 +1,8 @@
 from interpreter import draw
 from chessPictures import *
 
-draw(knight.verticalRepeat(3))
+fil1 = knight.join(knight.negative())
+fil2 = fil1.negative()
+dibFinal = Picture(fil1.img + fil2.img)
+
+draw(dibFinal)

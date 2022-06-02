@@ -117,17 +117,11 @@ class Picture:
   def verticalRepeat(self, n):
     """Hola"""
     
-    aux = ""
     image = []
-    for i in range(0, len(self.img)):
-      for j in range(0, len(self.img[i])):
-        aux = aux + self. img[i][j]
-        image.append(aux)
-      aux = ""
-        
-    
-    
-    return Picture(self.img + self.img)
+    for i in range(n):
+      image = image + self.img
+  
+    return Picture(image)
 
   #Extra: Sólo para realmente viciosos 
   def rotate(self):

@@ -5,9 +5,10 @@ from chessPictures import *
 parte1A = square.join(square.negative())
 parte2A = parte1A.horizontalRepeat(4)
 parte1B = parte2A.negative()
+parcial = Picture(parte2A.img + parte1B.img)
 
 # Para la mitad faltante
-total = parte1B.verticalRepeat(2)
+total = parcial.verticalRepeat(2)
 
 # Finalmente
 draw(total)

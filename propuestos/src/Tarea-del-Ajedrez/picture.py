@@ -1,3 +1,4 @@
+from mimetypes import init
 from colors import *
 from pieces import *
 class Picture:
@@ -20,10 +21,10 @@ class Picture:
     """ Devuelve el espejo horizontal de la imagen """
     aux = []
     for i in self:
-      val = self[i]
-      aux.append(val[::-1])
+      aux.append(self[::-1])
+    #self.img = aux
     return Picture(aux)
-
+  
   def negative(self):
     """ Devuelve un negativo de la imagen """
     #return Picture(None)

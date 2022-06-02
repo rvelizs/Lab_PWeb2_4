@@ -1,10 +1,10 @@
 from colors import *
+from pieces import *
 class Picture:
   def __init__(self, img):
     self.img = img;
   
   def __eq__(self, other):
-    """hola"""
     return self.img == other.img
 
   def _invColor(self, color):
@@ -18,7 +18,11 @@ class Picture:
 
   def horizontalMirror(self):
     """ Devuelve el espejo horizontal de la imagen """
-    #return Picture(None)
+    aux = []
+    for i in self:
+      val = self[i]
+      aux.append(val[::-1])
+    return Picture(aux)
 
   def negative(self):
     """ Devuelve un negativo de la imagen """

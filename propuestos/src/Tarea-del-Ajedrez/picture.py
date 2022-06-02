@@ -108,7 +108,7 @@ class Picture:
     return Picture(image)
 
   def verticalRepeat(self, n):
-    """Hola"""
+    """Muestra self n veces hacia abajo"""
     
     image = []
     for i in range(n):

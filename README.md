@@ -15,4 +15,4 @@ En ejercicios resueltos:
 - [resuelto2.py](resueltos/resuelto2.py): Se encarga de verificar si una matriz dada es unitaria o no.
 
 En ejercicios propuestos:
-- .
+- Ajedrez figuras

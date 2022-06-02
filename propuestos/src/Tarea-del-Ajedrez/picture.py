@@ -121,13 +121,13 @@ class Picture:
     image = []
     for i in range(0, len(self.img)):
       for j in range(0, len(self.img[i])):
-        aux = aux + self.img[i][j]
+        aux = aux + self. img[i][j]
         image.append(aux)
       aux = ""
         
     
     
-    return Picture(image)
+    return Picture(self.img + self.img)
 
   #Extra: Sólo para realmente viciosos 
   def rotate(self):
